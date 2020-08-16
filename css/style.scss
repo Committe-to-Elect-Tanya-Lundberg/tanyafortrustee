@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&display=swap');
+
 *,
 *::before,
 *::after {
@@ -6,10 +8,18 @@
     padding: 0;
 }
 
+:root {
+    --heading-font: 'Caudex', serif;
+}
+
 body {
     background-color: #3851a3;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
 }
