@@ -1,3 +1,3 @@
 # Tanya Lundberg for Northville Township Trustee
 
-[Visit tanyafortrustee.com](https://www.tanyafortrustee.com)
+[Elect Tanya Lundberg for Northville Township Trustee](https://www.tanyafortrustee.com)
