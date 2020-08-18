@@ -15,6 +15,10 @@
   --color-almostBlack: #2e2e2e;
 }
 
+html {
+  font-size: 16px;
+}
+
 @supports (font-variation-settings: "wdth" 200) {
   @font-face {
     /* https://github.com/TypeNetwork/Amstelvar */
@@ -63,7 +67,7 @@ p {
 }
 
 section {
-  max-width: 600px;
+  max-width: 80vw;
   padding: 3em;
   margin: 3em;
   border-radius: 2px;
@@ -71,5 +75,17 @@ section {
 
 .intro {
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
