@@ -61,7 +61,7 @@ h1 {
 
 p {
   font-size: 1.2rem;
-  font-variation-settings: 'wdth' 400, 'wght' 340;
+  font-variation-settings: "wdth" 400, "wght" 340;
   margin-bottom: 1em;
   color: var(--color-almostBlack);
 }

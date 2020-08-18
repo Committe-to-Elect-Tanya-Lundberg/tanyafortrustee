@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400');
+@import url("https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400");
 
 *,
 *::before,
@@ -20,14 +20,14 @@ html {
     font-size: 16px;
 }
 
-@supports (font-variation-settings: 'wdth' 200) {
-  @font-face {
-    /* https://github.com/TypeNetwork/Amstelvar */
-    font-family: Heebo;
-    src: url('../fonts/Heebo-VariableFont_wght.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
+@supports (font-variation-settings: "wdth" 200) {
+    @font-face {
+        /* https://github.com/TypeNetwork/Amstelvar */
+        font-family: Heebo;
+        src: url("../fonts/Heebo-VariableFont_wght.ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
 }
 
 body {
@@ -37,7 +37,6 @@ body {
     align-items: center;
     justify-content: center;
     font-family: var(--font-body);
-    font-size: clamp(100%, 1rem + 2vw, 24px);
 }
 
 h1,
@@ -54,7 +53,7 @@ h1 {
 
 p {
     font-size: 1.2rem;
-    font-variation-settings: 'wdth' 400, 'wght' 340;
+    font-variation-settings: "wdth" 400, "wght" 340;
     margin-bottom: 1em;
     color: var(--color-almostBlack);
 }
@@ -68,4 +67,15 @@ section {
 
 .intro {
     background-color: #ffffff;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
 }
