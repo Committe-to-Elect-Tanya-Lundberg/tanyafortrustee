@@ -65,8 +65,21 @@ section {
     border-radius: 3px;
 }
 
-.intro {
+.intro, .issues {
     background-color: #ffffff;
+}
+
+.issues {
+    display: flex;
+    gap: 2em;
+}
+
+footer {
+    text-align: center;
+    small {
+        font-size: 0.7rem;
+        line-height: 0.6rem;
+    }
 }
 
 @media screen and (min-width: 320px) {
