@@ -65,13 +65,40 @@ section {
     border-radius: 3px;
 }
 
-.intro, .issues {
+.intro, .issues, .absentee-voting {
     background-color: #ffffff;
 }
 
 .issues {
     display: flex;
     gap: 2em;
+}
+
+.absentee-voting {
+    display: flex;
+    gap: 2em;
+
+    .pull-quote {
+        position: relative;
+    }
+    .pull-quote::before, .pull-quote::after {
+        font-size: 4em;
+        font-family: var(--font-heading);
+        position: absolute;
+        z-index: 0;
+        color: #d4d4d4;
+
+    }
+    .pull-quote::before {
+        content: "“";
+        left: -40px;
+        top: -20px;
+    }
+    .pull-quote::after {
+        content: "”";
+        bottom: -20px;
+        right: -15px;
+    }
 }
 
 footer {
