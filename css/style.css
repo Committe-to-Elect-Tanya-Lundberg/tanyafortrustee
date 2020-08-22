@@ -78,6 +78,11 @@ section {
   background-color: #ffffff;
 }
 
+.signature {
+  width: 100%;
+  max-width: 250px;
+}
+
 .issues {
   display: -webkit-box;
   display: -ms-flexbox;
