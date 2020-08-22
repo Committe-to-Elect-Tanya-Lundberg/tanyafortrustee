@@ -9,13 +9,10 @@ const createObserver = () => {
     }
 
     let observer = new IntersectionObserver(e => {
-        console.log("observer is listening")
         if (!e[0].isIntersecting) {
             nav.classList.add("sticky")
-            console.log("stick!")
         } else {
             nav.classList.remove("sticky")
-            console.log("unstick")
         }
     }, options)
 
