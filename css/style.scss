@@ -14,6 +14,9 @@
 
     --color-primary: #3851a3;
     --color-almostBlack: #2e2e2e;
+    --color-secondary: #9be8c3;
+    --color-primary-dark: #152457;
+    --color-secondary-dark: #608f79;
 }
 
 html {
@@ -37,6 +40,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: var(--font-body);
+    display:relative;
 }
 
 h1,
@@ -58,6 +62,31 @@ p {
     color: var(--color-almostBlack);
 }
 
+nav {
+    background-color: var(--color-secondary);
+    width: 100vw;
+    height: 2em;
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        li {
+            line-height: 2em;
+            list-style: none;
+        }
+    }
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 2px rgba(0,0,0,0.6);
+}
+.nav-observer {
+    height: 0;
+}
+
 section {
     max-width: 1200px;
     padding: 3em;
@@ -65,7 +94,9 @@ section {
     border-radius: 3px;
 }
 
-.intro, .issues, .absentee-voting {
+.intro,
+.issues,
+.absentee-voting {
     background-color: #ffffff;
 }
 
@@ -87,13 +118,13 @@ section {
     .pull-quote {
         position: relative;
     }
-    .pull-quote::before, .pull-quote::after {
+    .pull-quote::before,
+    .pull-quote::after {
         font-size: 4em;
         font-family: var(--font-heading);
         position: absolute;
         z-index: 0;
         color: #d4d4d4;
-
     }
     .pull-quote::before {
         content: "“";

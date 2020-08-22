@@ -14,6 +14,9 @@
   --font-body: "Heebo", sans-serif;
   --color-primary: #3851a3;
   --color-almostBlack: #2e2e2e;
+  --color-secondary: #9be8c3;
+  --color-primary-dark: #152457;
+  --color-secondary-dark: #608f79;
 }
 
 html {
@@ -46,6 +49,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: var(--font-body);
+  display: relative;
 }
 
 h1,
@@ -67,6 +71,39 @@ p {
   color: var(--color-almostBlack);
 }
 
+nav {
+  background-color: var(--color-secondary);
+  width: 100vw;
+  height: 2em;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+}
+
+nav ul li {
+  line-height: 2em;
+  list-style: none;
+}
+
+nav.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.nav-observer {
+  height: 0;
+}
+
 section {
   max-width: 1200px;
   padding: 3em;
@@ -74,7 +111,9 @@ section {
   border-radius: 3px;
 }
 
-.intro, .issues, .absentee-voting {
+.intro,
+.issues,
+.absentee-voting {
   background-color: #ffffff;
 }
 
@@ -105,7 +144,8 @@ section {
   position: relative;
 }
 
-.absentee-voting .pull-quote::before, .absentee-voting .pull-quote::after {
+.absentee-voting .pull-quote::before,
+.absentee-voting .pull-quote::after {
   font-size: 4em;
   font-family: var(--font-heading);
   position: absolute;
