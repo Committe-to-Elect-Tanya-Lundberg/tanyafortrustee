@@ -40,7 +40,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: var(--font-body);
-    display:relative;
+    display: relative;
 }
 
 h1,
@@ -73,6 +73,10 @@ nav {
         li {
             line-height: 2em;
             list-style: none;
+            a {
+                color: black;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -81,7 +85,7 @@ nav.sticky {
     position: sticky;
     top: 0;
     z-index: 10;
-    box-shadow: 0 0 4px rgba(0,0,0,0.6);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
 }
 .nav-observer {
     height: 0;
