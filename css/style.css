@@ -75,7 +75,7 @@ h1 em {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 h3 {
@@ -90,7 +90,7 @@ p {
 }
 
 .logo {
-  --logo-size: 12em;
+  --logo-size:5em;
   border: 2px solid #fff;
   border-radius: 100vw;
   padding: 0.5em;
@@ -98,14 +98,20 @@ p {
   position: absolute;
   left: 4em;
   z-index: 10;
-  width: var(--logo-size);
-  height: var(--logo-size);
-  -webkit-transform: translateY(-4em);
-          transform: translateY(-4em);
   -webkit-transition: width 250ms ease-in-out, height 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   transition: width 250ms ease-in-out, height 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, width 250ms ease-in-out, height 250ms ease-in-out;
   transition: transform 250ms ease-in-out, width 250ms ease-in-out, height 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  -webkit-transform: translateY(-1em);
+          transform: translateY(-1em);
+}
+
+.main .logo {
+  --logo-size: 12em;
+  -webkit-transform: translateY(-4em);
+          transform: translateY(-4em);
 }
 
 .btn {
@@ -335,6 +341,16 @@ footer small {
   max-width: 2em;
 }
 
+.endorsement {
+  -webkit-clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0 100%, 2% 50%, 0 0);
+          clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0 100%, 2% 50%, 0 0);
+  background-color: var(--color-secondary);
+  font-family: var(--font-heading);
+  color: var(--color-almostBlack);
+  text-align-last: center;
+  display: inline-block;
+}
+
 @media screen and (min-width: 320px) {
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -380,7 +396,7 @@ footer small {
 
 @media screen and (max-width: 1086px) {
   .logo,
-  nav.sticky .logo {
+  .main nav.sticky .logo {
     width: 90px;
     height: 90px;
     -webkit-transform: translateY(-0.5em) translateX(-2em);
