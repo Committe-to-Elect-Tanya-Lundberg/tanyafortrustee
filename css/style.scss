@@ -17,6 +17,8 @@
     --color-secondary: #9be8c3;
     --color-primary-dark: #152457;
     --color-secondary-dark: #608f79;
+
+    --br: 0.2em;
 }
 
 html {
@@ -43,10 +45,6 @@ body {
     display: relative;
 }
 
-img {
-    max-width: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -69,7 +67,7 @@ p {
 .btn {
     background: var(--color-secondary);
     padding: 0.5em 1em;
-    border-radius: 0.2em;
+    border-radius: var(--br);
     text-decoration: none;
     color: var(--color-almostBlack);
 }
@@ -78,7 +76,9 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    margin-bottom: -.3em;
+    margin-bottom: -0.3em;
+
+    padding: 2em;
 
     .slogan {
         padding: 3em;
@@ -90,6 +90,12 @@ p {
         .btn {
             font-size: 1.5rem;
         }
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: var(--br);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -144,6 +150,23 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2em;
+
+    .environment-img {
+        float: right;
+        transform: translateX(5em);
+        margin-left: -3em;
+        width: 50%;
+        img {
+            width: 100%;
+            border-radius: var(--br);
+        }
+        small {
+            display: inline-block;
+            max-width: 80%;
+            font-size: 0.7rem;
+            color: #666;
+        }
+    }
 }
 
 .absentee-voting {
