@@ -326,7 +326,9 @@ footer {
 
 footer small {
   font-size: 0.7rem;
-  line-height: 0.6rem;
+  line-height: 0.8rem;
+  display: inline-block;
+  margin-top: 2em;
 }
 
 .social-media img {
