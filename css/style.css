@@ -119,11 +119,6 @@ p {
 }
 
 .hero {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
   margin-bottom: -0.3em;
   width: 100vw;
   min-height: 700px;
@@ -368,6 +363,16 @@ footer small {
   }
   .pull-quote {
     display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    width: 8em;
+    height: 8em;
   }
 }
 
