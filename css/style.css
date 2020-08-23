@@ -52,6 +52,8 @@ body {
   font-family: var(--font-body);
   display: relative;
   overflow-x: hidden;
+  position: relative;
+  width: 100vw;
 }
 
 h1,
@@ -67,8 +69,17 @@ h1 {
   font-size: 3.5rem;
 }
 
+h1 em {
+  font-style: normal;
+  color: var(--color-secondary);
+}
+
 h2 {
   font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 p {
@@ -78,12 +89,33 @@ p {
   color: var(--color-almostBlack);
 }
 
+.logo {
+  --logo-size: 12em;
+  border: 2px solid #fff;
+  border-radius: 100vw;
+  padding: 0.5em;
+  background-color: var(--color-primary);
+  position: absolute;
+  left: 4em;
+  z-index: 10;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  -webkit-transform: translateY(-4em);
+          transform: translateY(-4em);
+  -webkit-transition: width 250ms ease-in-out, height 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  transition: width 250ms ease-in-out, height 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, width 250ms ease-in-out, height 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, width 250ms ease-in-out, height 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
 .btn {
   background: var(--color-secondary);
   padding: 0.5em 1em;
   border-radius: var(--br);
   text-decoration: none;
   color: var(--color-almostBlack);
+  margin: 2em 0 0 0;
+  display: inline-block;
 }
 
 .hero {
@@ -93,6 +125,10 @@ p {
       grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   margin-bottom: -0.3em;
+  width: 100vw;
+  min-height: 700px;
+  background: url("../img/family-photo.jpg") no-repeat;
+  background-size: cover;
   padding: 2em;
 }
 
@@ -103,7 +139,7 @@ p {
 
 .hero .slogan h1 {
   line-height: 1em;
-  margin-bottom: 1.5em;
+  text-shadow: 0 0 0.35em rgba(0, 0, 0, 0.95), 0 0 0.65em rgba(0, 0, 0, 0.95), 0 0 1em rgba(0, 0, 0, 0.95);
 }
 
 .hero .slogan .btn {
@@ -118,7 +154,6 @@ p {
 }
 
 nav {
-  display: none;
   background-color: var(--color-secondary);
   width: 100vw;
   height: 2em;
@@ -148,9 +183,16 @@ nav.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 5;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+nav.sticky .logo {
+  width: 5em;
+  height: 5em;
+  -webkit-transform: translateY(-1em);
+          transform: translateY(-1em);
 }
 
 .nav-observer {
@@ -216,8 +258,8 @@ section {
 .issues .callout__right {
   float: right;
   margin-left: -3em;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(90%);
+          transform: translateX(90%);
   opacity: 0;
 }
 
@@ -233,8 +275,8 @@ section {
 
 .issues .callout__left {
   float: left;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-90%);
+          transform: translateX(-90%);
   opacity: 0;
   margin-right: 1.5em;
   width: 30%;
@@ -259,6 +301,7 @@ section {
 
 .absentee-voting .pull-quote {
   position: relative;
+  min-width: 200px;
 }
 
 .absentee-voting .pull-quote::before,
@@ -278,8 +321,8 @@ section {
 
 .absentee-voting .pull-quote::after {
   content: "”";
-  bottom: -20px;
-  right: -15px;
+  bottom: -70px;
+  right: 0;
 }
 
 footer {
@@ -291,7 +334,7 @@ footer small {
   line-height: 0.6rem;
 }
 
-.social-media {
+.social-media img {
   max-width: 2em;
 }
 
@@ -304,6 +347,37 @@ footer small {
 @media screen and (min-width: 1000px) {
   html {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    font-size: 0.5rem;
+    min-height: unset;
+  }
+  .issues .callout__left,
+  .issues .callout__right {
+    float: none;
+    width: 100%;
+  }
+  .issues .callout__left.visible,
+  .issues .callout__right.visible {
+    margin: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .pull-quote {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1086px) {
+  .logo,
+  nav.sticky .logo {
+    width: 90px;
+    height: 90px;
+    -webkit-transform: translateY(-0.5em) translateX(-2em);
+            transform: translateY(-0.5em) translateX(-2em);
   }
 }
 /*# sourceMappingURL=style.css.map */

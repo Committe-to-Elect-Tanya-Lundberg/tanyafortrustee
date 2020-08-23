@@ -8,21 +8,23 @@
         <script src="./scripts/script.js" defer></script>
     </head>
     <body>
+
+        <div class="hero" role="presentation">
+            <div class="slogan">
+                <h1>Protect<br><em>Northville’s</em><br>future!</h1>
+                <a href="#donate" class="btn">Donate</a>
+            </div>
+            <!-- <img src="./img/family-photo.jpg" alt="Hero image" /> -->
+        </div>
+        <div class="nav-observer" role="presentation"></div>
+        <nav>
         <img
             src="./img/logo-reversed-facebook.svg"
             alt="Tanya Lundberg for Northville Township Trustee"
             height="500"
             width="500"
+            class="logo"
         />
-        <div class="nav-observer" role="presentation"></div>
-        <div class="hero" role="presentation">
-            <div class="slogan">
-                <h1>Striving to keep Northville thriving!</h1>
-                <a href="#donate" class="btn">Donate</a>
-            </div>
-            <img src="./img/family-photo.jpg" alt="Hero image" />
-        </div>
-        <nav>
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Endorsements</a></li>
@@ -54,8 +56,8 @@
             <h2>Issues</h2>
             <div class="card" role="presentation">
                 <div class="callout callout__right">
-                    <img src="./img/belle-isle.jpg" alt="Belle Isle Cleanup" />
-                    <small>Tanya and her colleagues helping to “keep Belle Isle beautiful”.</small>
+                    <img src="./img/belle-isle.jpg" alt="Tanya poses with colleagues at a Belle Isle Cleanup event" />
+                    <small>Working with colleagues to help “keep Belle Isle beautiful.”</small>
                 </div>
                 <h3>Environment</h3>
                 <p>
@@ -68,8 +70,8 @@
             </div>
             <div class="card" role="presentation">
                 <div class="callout callout__left">
-                    <img src="./img/7-mile-plan.jpg" alt="Belle Isle Cleanup" />
-                    <small>7-Mile Proposal</small>
+                    <img src="./img/7-mile-plan.jpg" alt="7 Mile Proposal" />
+                    <small>Legacy Park Proposal</small>
                 </div>
                 <h3>Development</h3>
                 <p>
@@ -81,6 +83,13 @@
             </div>
 
             <div class="card" role="presentation">
+                <div class="callout callout__right">
+                    <img
+                        src="./img/black-lives-matter.jpg"
+                        alt="Gathering of residents at a Black Lives Matter rally in Northville"
+                    />
+                    <small>June 12 rally at Ford Field in Northville</small>
+                </div>
                 <h3>Inclusion</h3>
                 <p>
                     Northville Twp. attracts diverse residents and visitors. We must be intentional about making sure
@@ -92,25 +101,38 @@
             </div>
         </section>
         <section class="absentee-voting">
-            <div class="pull-quote" role="complementary">
-                Anyone can vote safely and quickly before the Nov. 3 general election.
+            <div>
+                <div class="pull-quote" role="complementary">
+                    Anyone can vote safely and quickly before the Nov. 3 general election.
+                </div>
             </div>
-            <p>
-                Remember, Michiganders voted in no-reason absentee voting in 2018! Anyone can vote safely and quickly
-                before the November 3 general election.
-                <a href="https://www.twp.northville.mi.us/your_government/departments/clerk_s_office"
-                    >Contact the Clerk’s Office</a
-                >
-                to request an absentee ballot. Absentee ballots will be mailed after September 19 and must be received
-                by the Clerk’s Office by 8pm on November 3. Please drop your absentee ballot off at Township Hall —
-                there is a 24-hour dropbox outside. If you mail your ballot to the Clerk’s Office, you can track it on
-                the Secretary of State’s website to make sure it’s received on time.
-            </p>
+            <div>
+                <h2>Vote Absentee</h2>
+                <p>
+                    Any Michigander can vote safely and quickly before the Nov. 3 general election.
+                    <a href="https://www.twp.northville.mi.us/your_government/departments/clerk_s_office"
+                        >Contact the Clerk’s Office</a
+                    >
+                    to request an absentee ballot.
+                </p>
+                <p>
+                    Please drop your absentee ballot off at Township Hall by 8pm on Nov. 3 — there is a 24-hour dropbox
+                    outside. If you mail your ballot you can
+                    <a href="https://mvic.sos.state.mi.us/Voter/Index">track it on the Secretary of State’s website</a>
+                    to make sure it’s received on time.
+                </p>
+                <a href="https://mvic.sos.state.mi.us/Voter/Index" class="btn">Track my ballot</a>
+            </div>
         </section>
         <footer>
-            <a href="https://facebook.com/tanyafortrustee"
-                ><img src="./img/icon-facebook.svg" alt="Facebook" class="social-media"
-            /></a>
+            <div class="social-media">
+                <a href="https://facebook.com/tanyafortrustee"
+                    ><img src="./img/icon-facebook.svg" alt="Tanya for Trustee Facebook"
+                /></a>
+                <a href="https://twitter.com/tanyafortrustee">
+                    <img src="./img/icon-twitter.svg" alt="Tanya for Trustee Twitter" />
+                </a>
+            </div>
             <p>
                 <small>
                     Paid for by the Committee to Elect Tanya Lundberg<br />
