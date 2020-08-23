@@ -43,10 +43,15 @@ body {
     display: relative;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1,
 h2,
 h3,
 h4 {
+    margin: 0;
     font-family: var(--font-heading);
 }
 
@@ -60,6 +65,32 @@ p {
     font-variation-settings: "wdth" 400, "wght" 340;
     margin-bottom: 1em;
     color: var(--color-almostBlack);
+}
+.btn {
+    background: var(--color-secondary);
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    text-decoration: none;
+    color: var(--color-almostBlack);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-bottom: -.3em;
+
+    .slogan {
+        padding: 3em;
+        color: #fff;
+        h1 {
+            line-height: 1em;
+            margin-bottom: 1.5em;
+        }
+        .btn {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 nav {
@@ -148,6 +179,10 @@ footer {
         font-size: 0.7rem;
         line-height: 0.6rem;
     }
+}
+
+.social-media {
+    max-width: 2em;
 }
 
 @media screen and (min-width: 320px) {
