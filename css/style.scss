@@ -43,6 +43,7 @@ body {
     justify-content: center;
     font-family: var(--font-body);
     display: relative;
+    overflow-x: hidden;
 }
 
 h1,
@@ -51,11 +52,14 @@ h3,
 h4 {
     margin: 0;
     font-family: var(--font-heading);
+    --color-almostBlack: #2e2e2e;
 }
 
 h1 {
+    font-size: 3.5rem;
+}
+h2 {
     font-size: 3rem;
-    --color-almostBlack: #2e2e2e;
 }
 
 p {
@@ -100,6 +104,7 @@ p {
 }
 
 nav {
+    display:none;
     background-color: var(--color-secondary);
     width: 100vw;
     height: 2em;
@@ -140,6 +145,13 @@ section {
 .absentee-voting {
     background-color: #ffffff;
 }
+.card {
+    clear: both;
+    margin-top: 2em;
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
 
 .signature {
     width: 100%;
@@ -151,20 +163,43 @@ section {
     flex-direction: column;
     gap: 2em;
 
-    .environment-img {
-        float: right;
-        transform: translateX(5em);
-        margin-left: -3em;
+    .callout {
         width: 50%;
         img {
             width: 100%;
             border-radius: var(--br);
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
         }
         small {
             display: inline-block;
             max-width: 80%;
             font-size: 0.7rem;
             color: #666;
+        }
+    }
+    .callout__right {
+        float: right;
+        margin-left: -3em;
+        transform: translateX(100%);
+        opacity: 0;
+
+        &.visible {
+            transition: transform 1000ms ease-out, opacity 500ms ease;
+            opacity: 1;
+            transform: translateX(5em);
+        }
+    }
+    .callout__left {
+        float: left;
+        transform: translateX(-100%);
+        opacity: 0;
+        margin-right: 1.5em;
+        width: 30%;
+
+        &.visible {
+            transition: transform 1000ms ease-out, opacity 500ms ease;
+            opacity: 1;
+            transform: translateX(-2em);
         }
     }
 }
