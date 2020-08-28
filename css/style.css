@@ -363,10 +363,26 @@ footer small {
   }
 }
 
+@media screen and (max-width: 469px) {
+  .hero .slogan {
+    margin: 0;
+    padding: 0;
+  }
+  .hero .slogan h1 {
+    font-size: 2rem;
+  }
+  .hero .slogan .btn {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .hero {
-    font-size: 0.5rem;
     min-height: unset;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-top: 1em;
   }
   .issues .callout__left,
   .issues .callout__right {
@@ -385,12 +401,21 @@ footer small {
   .logo {
     display: none;
   }
-}
-
-@media screen and (max-width: 1200px) {
-  .logo {
-    width: 8em;
-    height: 8em;
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+  nav ul li {
+    display: inline-block;
   }
 }
 
@@ -401,6 +426,39 @@ footer small {
     height: 90px;
     -webkit-transform: translateY(-0.5em) translateX(-2em);
             transform: translateY(-0.5em) translateX(-2em);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    width: 8em;
+    height: 8em;
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .hero .slogan {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    height: unset;
+  }
+  nav ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    gap: 0.2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

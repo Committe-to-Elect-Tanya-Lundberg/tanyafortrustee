@@ -309,11 +309,27 @@ footer {
         font-size: 22px;
     }
 }
+@media screen and (max-width: 469px){
+    .hero .slogan {
+        margin: 0;
+        padding: 0;
+        h1 {
+            font-size: 2rem;
+        }
+        .btn {
+            font-size: 1rem;
+        }
+    }
+
+}
 
 @media screen and (max-width: 800px) {
     .hero {
-        font-size: 0.5rem;
         min-height: unset;
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 1em;
+        }
     }
 
     .issues {
@@ -334,11 +350,15 @@ footer {
     .logo {
         display: none;
     }
-}
-@media screen and (max-width: 1200px) {
-    .logo{
-        width: 8em;
-        height: 8em;
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        width: 90%;
+        li {
+            display: inline-block;
+        }
     }
 }
 @media screen and (max-width: 1086px) {
@@ -348,4 +368,30 @@ footer {
         height: 90px;
         transform: translateY(-0.5em) translateX(-2em);
     }
+}
+@media screen and (max-width: 1200px) {
+    .logo{
+        width: 8em;
+        height: 8em;
+    }
+}
+@media screen and (max-width: 571px){
+    .hero .slogan {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        height: unset;
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 0.2em;
+        }
+    }
+
 }
