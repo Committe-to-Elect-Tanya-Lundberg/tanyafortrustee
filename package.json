@@ -1,0 +1,23 @@
+{
+  "name": "tanyafortrustee.com",
+  "version": "1.0.0",
+  "description": "[Elect Tanya Lundberg for Northville Township Trustee](https://www.tanyafortrustee.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Committe-to-Elect-Tanya-Lundberg/tanyafortrustee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Committe-to-Elect-Tanya-Lundberg/tanyafortrustee/issues"
+  },
+  "homepage": "https://github.com/Committe-to-Elect-Tanya-Lundberg/tanyafortrustee#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
