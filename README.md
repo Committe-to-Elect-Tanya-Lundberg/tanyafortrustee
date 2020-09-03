@@ -4,6 +4,7 @@
 
 ## Generate site for development
 
-```shell
+```bash
+cd srv
 npx @11ty/eleventy --output="../" --serve
 ```
