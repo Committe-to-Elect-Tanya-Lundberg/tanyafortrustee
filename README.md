@@ -2,8 +2,8 @@
 
 [Elect Tanya Lundberg for Northville Township Trustee](https://www.tanyafortrustee.com)
 
-## Generate site
+## Generate site for development
 
 ```shell
-npx @11ty/eleventy --input=src --output=_site --formats=css,js,ttf,jpg,svg,png,liquid
+npx @11ty/eleventy --output="../" --serve
 ```
