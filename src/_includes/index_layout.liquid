@@ -3,22 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{%- if title -%}{{ title }} • {%- endif -%}Tanya Lundberg for Northville Township Trustee</title>
+        <title>{%- if title -%}<h1>{{ title }}</h1>{%- endif -%}</title>
         <link rel="stylesheet" href="/css/style.css?v=1.1" />
         <script src="/scripts/script.js?v=1" defer></script>
     </head>
-    <body>
+    <body class="main">
+        <div class="hero" role="presentation">
+            <div class="slogan">
+                <h1>
+                    New Voice,<br />New Vision<br />
+                    for <em>Northville</em>
+                </h1>
+                <a href="https://secure.actblue.com/donate/cte-tanya-lundberg" class="btn">Donate</a>
+            </div>
+        </div>
         <div class="nav-observer" role="presentation"></div>
         <nav>
-            <a href="./" title="Home">
-                <img
-                    src="./img/logo-reversed-facebook.svg"
-                    alt="Tanya Lundberg for Northville Township Trustee"
-                    height="500"
-                    width="500"
-                    class="logo"
-                />
-            </a>
+            <img
+                src="/img/logo-reversed-facebook.svg"
+                alt="Tanya Lundberg for Northville Township Trustee"
+                height="500"
+                width="500"
+                class="logo"
+            />
             <ul>
                 <li><a href="/about">About</a></li>
                 <li><a href="/endorsements">Endorsements</a></li>
@@ -32,10 +39,10 @@
         <footer>
             <div class="social-media">
                 <a href="https://facebook.com/tanyafortrustee"
-                    ><img src="./img/icon-facebook.svg" alt="Tanya for Trustee Facebook"
+                    ><img src="/img/icon-facebook.svg" alt="Tanya for Trustee Facebook"
                 /></a>
                 <a href="https://twitter.com/tanyafortrustee"
-                    ><img src="./img/icon-twitter.svg" alt="Tanya for Trustee Twitter" />
+                    ><img src="/img/icon-twitter.svg" alt="Tanya for Trustee Twitter" />
                 </a>
             </div>
             <p>
