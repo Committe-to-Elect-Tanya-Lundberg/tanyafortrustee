@@ -77,7 +77,13 @@ p {
     margin-bottom: 1em;
     color: var(--color-almostBlack);
 }
-
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .logo {
     --logo-size:5em;
     border: 2px solid #fff;
@@ -175,6 +181,7 @@ nav.sticky {
 }
 
 section {
+    width: 100%;
     max-width: 1200px;
     padding: 3em;
     margin: 3em;
