@@ -76,6 +76,11 @@ h1 em {
 
 h2 {
   font-size: 2.4rem;
+  margin-top: 1.4em;
+}
+
+h2:first-of-type {
+  margin-top: 0;
 }
 
 h3 {
@@ -137,7 +142,7 @@ main {
   border-radius: var(--br);
   text-decoration: none;
   color: var(--color-almostBlack);
-  margin: 2em 0 0 0;
+  margin: 2em 0;
   display: inline-block;
 }
 
@@ -223,11 +228,6 @@ section {
   padding: 3em;
   margin: 3em;
   border-radius: 3px;
-}
-
-.intro,
-.issues,
-.absentee-voting {
   background-color: #ffffff;
 }
 
@@ -353,6 +353,10 @@ footer small {
   line-height: 0.8rem;
   display: inline-block;
   margin-top: 2em;
+}
+
+footer a {
+  color: var(--color-secondary);
 }
 
 .social-media img {
