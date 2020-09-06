@@ -110,6 +110,7 @@ main {
 .btn {
     background: var(--color-secondary);
     padding: 0.5em 1em;
+    border: none;
     border-radius: var(--br);
     text-decoration: none;
     color: var(--color-almostBlack);
@@ -304,6 +305,34 @@ footer {
     color: var(--color-almostBlack);
     text-align-last: center;
     display: inline-block;
+}
+
+// form {
+//     background-color: #efefef;
+//     padding: 2em;
+//     margin-left: -2em;
+//     margin-right: -2em;
+//     border-radius: 3px;
+//     .btn {
+//         font-size: 1em;
+//     }
+// }
+// label {
+//     display: block;
+// }
+// input {
+//     display: inline-block;
+//     padding: 1em;
+//     border: 1px solid var(--color-secondary-dark);
+//     border-radius: 3px;
+//     margin-bottom: 1.5em;
+
+//     &[type="checkbox"] {
+//         margin-right: 1em;
+//     }
+// }
+iframe {
+    margin-left: -30px;
 }
 
 @media screen and (max-width: 1200px) {
